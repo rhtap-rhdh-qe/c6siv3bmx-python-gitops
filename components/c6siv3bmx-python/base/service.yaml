@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: c6siv3bmx-python
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: c6siv3bmx-python 
+  name: c6siv3bmx-python
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: c6siv3bmx-python 
